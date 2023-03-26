@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int m = 1e9 + 7;
+//we can use ax + my = 1 extended euclid algorithm to find x = modulo inverse
 //modulo inverse for a number
 // inv(i) = -floor(m/i)*inv(m%i)%m
 int invr(int i) {
