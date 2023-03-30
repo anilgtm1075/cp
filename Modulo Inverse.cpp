@@ -5,6 +5,7 @@ const int m = 1e9 + 7;
 //modulo inverse for a number
 // inv(i) = -floor(m/i)*inv(m%i)%m
 int invr(int i) {
+	//here m > i (or we can modulo to make it smaller in 1 step before calling the function)
   return i <= 1 ? i : m - (long long)(m/i) * invr(m % i) % m;
 }
 
